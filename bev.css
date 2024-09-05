@@ -1,5 +1,5 @@
  body {
-     font-family: Arial, sans-serif;
+     font-family: 'Times New Roman', Times, serif;
      margin: 0;
      padding: 0;
      box-sizing: border-box;
@@ -7,7 +7,7 @@
      background-size: cover;
      background-repeat: no-repeat;
      background-attachment: fixed;
-     color: #fff;
+     color: #3309ed;
  }
 
  h1,
@@ -17,6 +17,10 @@
      background-color: rgba(205, 215, 215, 0.5);
      padding: 10px;
      border-radius: 10px;
+ }
+ h1 {
+    font-size: 38px;
+    font-family: 'Times New Roman', Times, serif;
  }
 
  .image-container {
