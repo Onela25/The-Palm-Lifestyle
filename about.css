@@ -13,7 +13,7 @@
      max-width: 1200px;
      margin: 0 auto;
      padding: 20px;
-     background-color: rgba(255, 255, 255, 0.9);
+     background-color: rgba(249, 243, 243, 0.2);
      border-radius: 10px;
      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
  }
@@ -32,8 +32,16 @@
      font-size: 28px;
      text-align: center;
      margin-top: 40px;
-     color: #444;
+     color: #f9f4f4;
  }
+   p {
+       font-size: 1.1em;
+       line-height: 1.6;
+       color: #333;
+       padding: 10px;
+       background-color: rgba(255, 255, 255, 0.9);
+       border-radius: 5px;
+   }
 
  .image-container {
      display: flex;
