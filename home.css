@@ -37,7 +37,7 @@ nav {
 }
 
 .logo img {
-    width: 40px;
+    width: 50px;
     height: auto;
 }
 
@@ -124,10 +124,10 @@ h2 {
 p {
     font-size: 1.1em;
     line-height: 1.6;
-    color: #333;
+    color: #ffffff;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .nav-links ul {
         flex-direction: row;
