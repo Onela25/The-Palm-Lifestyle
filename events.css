@@ -1,9 +1,12 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    background-image: url('images/palmFrame.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #f7ecec;
 }
 
 h1,
@@ -14,14 +17,16 @@ h2 {
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
     color: #ffcc00;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 h2 {
     font-size: 2em;
-    color: #333;
+    color: #176713;
 }
 
 .image-container {
@@ -61,8 +66,8 @@ h2 {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #333;
-    color: #fff;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #53771a;
     position: fixed;
     width: 100%;
     bottom: 0;
