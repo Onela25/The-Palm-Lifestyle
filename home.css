@@ -36,9 +36,8 @@ nav {
     left: 20px;
 }
 
-.logo {
+.logo img {
     width: 40px;
-    /* Smaller logo size */
     height: auto;
 }
 
