@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now Form</title>
+    <link rel="stylesheet" href="book.css">
+</head>
+
+<body>
+    <button class="book-now" onclick="openForm()">Book Now</button>
+
+    <div class="form-popup" id="bookingForm">
+        <form action="send_email.php" method="post" class="form-container">
+            <h2>Booking Form</h2>
+
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Enter Your Name" name="name" required>
+
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="Enter Your Email" name="email" required>
+
+            <label for="phone"><b>Phone</b></label>
+            <input type="tel" placeholder="Enter Your Phone Number" name="phone" required>
+
+            <label for="event"><b>Event Type</b></label>
+            <select name="event" required>
+                <option value="birthday">Birthday</option>
+                <option value="baby_shower">Baby Shower</option>
+                <option value="game_night">Game Night</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="date"><b>Date</b></label>
+            <input type="date" name="date" required>
+
+            <label for="age"><b>Age</b></label>
+            <input type="number" placeholder="Enter Your Age" name="age" min="18" required>
+
+            <button type="submit" class="btn">Submit</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+   
+</body>
+
+</html>
