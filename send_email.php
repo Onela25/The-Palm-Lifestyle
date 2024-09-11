@@ -15,6 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (mail($to, $subject, $message, $headers)) {
         echo "Booking request sent successfully!";
     } else {
+        error_log("Failed to send booking request.",0) ;
         echo "Failed to send booking request.";
     }
 }
