@@ -1,46 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Palm Welcome Page</title>
-   <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <section class="header">
         <nav>
             <div class="logo">
                 <img src="images/logo.png" alt="The Palm Lifestyle Logo">
             </div>
+            <button class="toggle-button" aria-label="Toggle navigation">
+                ☰
+            </button>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+          
+            <button id="back-button" style="display: none;">Back</button>
         </nav>
-        <div class="nav-links">
 
-         <ul>
-           
-            <li>
-            <a href="home.html">HOME</a>
-            </li>
-            <li>
-                <a href="about.html">ABOUT</a>
-            </li>
-           
-            <li>
-                <a href="menu.html">MENU</a>
-            </li>
-            <li>
-                <a href="events.html">EVENTS</a>
-            </li>
-            <li>
-                <a href="contact.html">CONTACT</a>
-            </li>
-        </ul>
+        <h1>The Palm Lifestyle</h1>
+        <h2>"Where Elegance Meets Everyday Comfort"</h2>
 
-        </div>
-        <h1>
-            The Palm Lifestyle
-        </h1>
-        <h2>"Where Elegance Meets everyday Comfort"</h2>
-
-    
+       <script src="index.js"></script>
 </body>
+
 </html>
