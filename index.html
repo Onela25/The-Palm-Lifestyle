@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Palm Welcome Page</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
@@ -14,10 +15,10 @@
             <div class="logo">
                 <img src="images/logo.png" alt="The Palm Lifestyle Logo">
             </div>
-            <button class="toggle-button" aria-label="Toggle navigation">
+            <button class="toggle-button" aria-label="Toggle navigation" id="toggle-button">
                 ☰
             </button>
-            <div class="nav-links">
+            <div class="nav-links" id="nav-links">
                 <ul>
                     <li><a href="home.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
@@ -26,9 +27,15 @@
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
-           
-            <button id="back-button">Back</button>
+
+            <button id="back-button" onclick="goBack()">Back</button>
         </nav>
-    
+
         <h1>The Palm Lifestyle</h1>
         <h2>"Where Elegance Meets Everyday Comfort"</h2>
+    </section>
+<footer><small>This project was coded by Onela Wellem</small></footer>
+  
+</body>
+
+</html>
