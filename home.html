@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - The Palm Lifestyle</title>
     <link rel="stylesheet" href="home.css">
-    
+    <link rel="stylesheet" href="book.css">
+   
 </head>
 
 <body>
@@ -15,48 +16,42 @@
             <div class="logo">
                 <img src="images/logo.png" alt="The Palm Lifestyle Logo">
             </div>
+         
         </nav>
         <div class="hero">
             <h1>Welcome to The Palm Lifestyle!</h1>
             <p>Your premier destination for unforgettable celebrations.</p>
-            <a href="book.html" class="cta">Book Now</a>
         </div>
+            <button class="book-now" onclick="openForm()">Book Now</button>
     </header>
-    <main>
-        <section class="introduction">
-            <h2>About Us</h2>
-            <p>Nestled in the heart of Mamelodi, Nellmapius, The Palm Lifestyle offers the perfect blend of elegance and
-                township charm.</p>
-        </section>
-        <section class="featured">
-            <h2>Featured Events</h2>
-           <p>
-            Birthday celebrations,
-            Birthday Bashes,
-            Game Nights,
-            Baby Shower celebrations.
-            
-           </p>
-        </section>
-        <section class="gallery">
-            <h2>Gallery</h2>
-            
-            <div class="image-container">
-                <a href="index.html"><img src="images/photobooth1.jpg" alt="Photo Booth 1"></a>
-                <a href="index.html"><img src="images/photobooth2.jpg" alt="Photo Booth 2"></a>
-            </div>
-        </section>
-        <div class="social-media">
-            <ul>
-                <li><span class="icon">📞</span>Phone number: +27 76 913 0062</li>
-                <li><span class="icon">📘</span>Facebook: <a href="https://www.facebook.com/thepalmplace">The Palm
-                        Place</a></li>
-            </ul>
-        </div>
-    </main>
-    <footer>
-        <p>© 2024 The Palm Lifestyle. All rights reserved.</p>
-    </footer>
+    
+
+    <div class="form-popup" id="bookingForm" style="display: none;"> 
+        <form action="send_email.php" method="POST" class="form-container">
+            <h2>Booking Form</h2>
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Enter Your Name" name="name" required>
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="Enter Your Email" name="email" required>
+            <label for="phone"><b>Phone</b></label>
+            <input type="tel" placeholder="Enter Your Phone Number" name="phone" required>
+            <label for="event"><b>Event Type</b></label>
+            <select name="event" required>
+                <option value="birthday">Birthday</option>
+                <option value="baby_shower">Baby Shower</option>
+                <option value="game_night">Game Night</option>
+                <option value="other">Other</option>
+            </select>
+            <label for="date"><b>Date</b></label>
+            <input type="date" name="date" required>
+            <label for="age"><b>Age</b></label>
+            <input type="number" placeholder="Enter Your Age" name="age" min="18" required>
+            <button type="submit" class="btn">Submit</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+    
+    <script src="book.js"></script>
 </body>
 
 </html>

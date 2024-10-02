@@ -25,92 +25,51 @@ body {
 
 nav {
     display: flex;
-    width: 100%;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     position: absolute;
     top: 20px;
-    left: 20px;
+    padding: 0 20px;
+    
 }
 
-
 .logo img {
-    width: 60px;
+    width: 70px;
     height: auto;
 }
 
-.toggle-button {
-    background: transparent;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    color: white;
-   
-}
 
 .nav-links {
     display: flex;
-   
-}
-
-.nav-links {
-    display: flex;
-   
+    flex-direction: row;
+    
 }
 
 @media (max-width: 600px) {
     nav {
         flex-direction: column;
-
         align-items: flex-start;
-        
+        padding: 10px;
+    
     }
 
     .nav-links {
         flex-direction: column;
-       
         position: static;
-        
-        background-color: none;
-        
         width: 100%;
-       
         display: none;
+        background-color: rgba(4, 9, 30, 0.7);
+        padding: 10px 0;
        
     }
 
     .nav-links.active {
         display: flex;
-        /* Show when active */
-    }
-
-    .toggle-button {
-        display: block;
-        
-        font-size: 24px;
-        
-        color: white;
-       
-    }
-
-    #back-button {
-        position: fixed;
-        
-        top: 20px;
-        right: 20px;
-        background-color: rgba(255, 255, 255, 0.7);
-      
-    }
-
-    h1 {
-        font-size: 40px;
         
     }
 
-    h2 {
-        font-size: 24px;
-        
-    }
+    
 }
 
 .nav-links.active {
@@ -121,8 +80,10 @@ nav {
     list-style: none;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    margin: auto;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  
 }
 
 .nav-links ul li {
@@ -153,12 +114,10 @@ nav {
     cursor: pointer;
     font-size: 16px;
     z-index: 1000;
-    
 }
 
 #back-button:hover {
     background-color: rgba(255, 255, 255, 0.2);
-   
 }
 
 h1 {
