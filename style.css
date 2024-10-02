@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f4f4;
     color: #333;
 }
@@ -37,6 +37,7 @@ nav {
 .logo img {
     width: 70px;
     height: auto;
+    margin: 10px;
 }
 
 
