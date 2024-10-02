@@ -49,13 +49,67 @@ nav {
 
 .nav-links {
     display: flex;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: rgba(4, 9, 30, 0.8);
    
+}
+
+.nav-links {
+    display: flex;
+   
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+
+        align-items: flex-start;
+        
+    }
+
+    .nav-links {
+        flex-direction: column;
+       
+        position: static;
+        
+        background-color: none;
+        
+        width: 100%;
+       
+        display: none;
+       
+    }
+
+    .nav-links.active {
+        display: flex;
+        /* Show when active */
+    }
+
+    .toggle-button {
+        display: block;
+        
+        font-size: 24px;
+        
+        color: white;
+       
+    }
+
+    #back-button {
+        position: fixed;
+        
+        top: 20px;
+        right: 20px;
+        background-color: rgba(255, 255, 255, 0.7);
+      
+    }
+
+    h1 {
+        font-size: 40px;
+        
+    }
+
+    h2 {
+        font-size: 24px;
+        
+    }
 }
 
 .nav-links.active {
@@ -67,6 +121,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    margin: auto;
 }
 
 .nav-links ul li {
@@ -86,17 +141,23 @@ nav {
 
 #back-button {
     display: none;
-    margin-top: 10px;
-    background-color: #ffcc00;
-    color: #333;
-    border: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
+    z-index: 1000;
+    
 }
 
 #back-button:hover {
-    background-color: #e6b800;
+    background-color: rgba(255, 255, 255, 0.2);
+   
 }
 
 h1 {
