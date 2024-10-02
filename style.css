@@ -44,8 +44,17 @@ nav {
     position: absolute;
     top: 20px;
     right: 20px;
+    
 }
 
+.nav-links.active {
+    display: block;
+}
+
+#back-button {
+   
+    margin-top: 10px;
+}
 .nav-links ul {
     list-style: none;
     display: flex;

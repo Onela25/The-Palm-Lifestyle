@@ -1,21 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
-        const toggleButton = document.querySelector('.toggle-button');
-        const navLinks = document.querySelector('.nav-links');
+            const toggleButton = document.querySelector('.toggle-button');
+            const navLinks = document.querySelector('.nav-links');
+            const backButton = document.getElementById('back-button');
 
-        toggleButton.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-    });
+        
+            toggleButton.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
 
-   
 
             document.querySelectorAll('.nav-links a').forEach(link => {
                 link.addEventListener('click', () => {
-                    document.getElementById('back-button').style.display = 'block';
+                    backButton.style.display = 'block';
                 });
             });
 
-            document.getElementById('back-button').addEventListener('click', () => {
-                window.history.back();
+            backButton.addEventListener('click', () => {
+                window.location.href = 'index.html';
             });
-   
+        });
