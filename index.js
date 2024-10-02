@@ -3,10 +3,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelector('.nav-links');
     const backButton = document.getElementById('back-button');
 
+   
     toggleButton.addEventListener('click', () => {
         navLinks.classList.toggle('active');
     });
 
+   
     document.querySelectorAll('.nav-links a').forEach(link => {
         link.addEventListener('click', () => {
             backButton.style.display = 'block';
@@ -15,12 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     backButton.addEventListener('click', () => {
-        window.history.back(); 
-        backButton.style.display = 'none'; 
+        window.location.href = 'index.html';
     });
-
-   
-    if (window.location.pathname.endsWith('index.html')) {
-        backButton.style.display = 'none';
-    }
 });
