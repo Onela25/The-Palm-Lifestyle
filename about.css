@@ -99,3 +99,25 @@
      border-radius: 10px;
      margin-top: 40px;
  }
+ 
+
+ .contextual-link {
+     margin: 20px 0;
+     text-align: right;
+     font-weight: bold;
+ }
+
+ .contextual-link p {
+     font-size: 16px;
+     color: #333;
+ }
+
+ .contextual-link a {
+     color: #04ff00;
+     text-decoration: underline;
+ }
+
+ .contextual-link a:hover {
+     color: #ffcc00;
+
+ }

@@ -3,8 +3,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelector('.nav-links');
     const backButton = document.getElementById('back-button');
 
-    
-    backButton.style.display = 'none';
+  
+    if (localStorage.getItem('navLinkClicked')) {
+        backButton.style.display = 'block';
+    } else {
+        backButton.style.display = 'none';
+    }
 
    
     if (toggleButton) {
@@ -13,14 +17,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    
+   
     document.querySelectorAll('.nav-links a').forEach(link => {
         link.addEventListener('click', () => {
             backButton.style.display = 'block';
+            localStorage.setItem('navLinkClicked', 'true');
         });
     });
 
-   
+    
     backButton.addEventListener('click', () => {
         window.location.href = 'index.html';
     });

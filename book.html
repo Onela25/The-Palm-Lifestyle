@@ -9,6 +9,7 @@
 </head>
 
 <body>
+   
     <button class="book-now" onclick="openForm()">Book Now</button>
     <div class="form-popup" id="bookingForm" style="display: none;"> <!-- Hide form initially -->
         <form action="send_email.php" method="POST" class="form-container">
@@ -32,6 +33,7 @@
             <input type="number" placeholder="Enter Your Age" name="age" min="18" required>
             <button type="submit" class="btn">Submit</button>
             <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            
         </form>
     </div>
     <script>

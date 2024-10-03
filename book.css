@@ -95,3 +95,22 @@ body {
         border-radius: 0;
     }
 }
+.contextual-link {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.contextual-link p {
+    font-size: 16px;
+    color: #333;
+}
+
+.contextual-link a {
+    color: #04ff00;
+    text-decoration: underline;
+}
+
+.contextual-link a:hover {
+    color: #ffcc00;
+    
+}
