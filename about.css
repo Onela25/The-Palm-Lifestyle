@@ -104,7 +104,7 @@
  .contextual-link {
      margin: 20px 0;
      text-align: right;
-     font-weight: bold;
+     font-weight:bold ;
  }
 
  .contextual-link p {
@@ -121,23 +121,7 @@
      color: #ffcc00;
 
  }
-
- body {
-     margin: 0;
-     padding: 0;
- }
-
- .container {
-     display: flex;
-     flex-wrap: wrap;
- }
-
- img {
-     max-width: 100%;
-     height: auto;
- }
-
- @media(max-width:768px) {
+ @media (max-width: 768px) {
      .container {
          flex-direction: column;
      }
@@ -147,8 +131,8 @@
      }
  }
 
- @media (min-width:769px) {
-     .coumn {
+ @media (min-width: 769px) {
+     .column {
          width: 50%;
      }
  }
