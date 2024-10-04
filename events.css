@@ -96,3 +96,33 @@ footer {
     color: #ffcc00;
 
 }
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media(max-width:768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+    }
+}
+
+@media (min-width:769px) {
+    .coumn {
+        width: 50%;
+    }
+}
