@@ -16,6 +16,7 @@ body {
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/PalmLeaves.jpeg');
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -65,10 +66,6 @@ nav {
     .nav-links.active {
         display: flex;
     }
-}
-
-.nav-links.active {
-    display: block;
 }
 
 .nav-links ul {
@@ -127,6 +124,9 @@ h2 {
     font-size: 50px;
     font-family: 'Playfair Display', serif;
 }
+footer {
+    font-size: 10px;
+}
 
 .p-container {
     background-color: rgba(255, 255, 255, 0.9);
@@ -166,6 +166,34 @@ img {
     }
 }
 
-
 .hamburger {
-    display: right;}
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.hamburger.active div:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active div:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active div:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media (max-width: 600px) {
+    .header {
+        background-size: cover;
+    }
+}
