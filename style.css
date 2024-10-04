@@ -47,6 +47,27 @@ nav {
     gap: 20px;
 }
 
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        position: static;
+        width: 100%;
+        display: none;
+        background-color: rgba(4, 9, 30, 0.7);
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
 .nav-links ul {
     list-style: none;
     display: flex;
@@ -69,66 +90,6 @@ nav {
 
 .nav-links ul li a:hover {
     color: #04ff00;
-}
-
-@media (max-width: 600px) {
-    .nav-links {
-        display: none;
-        
-        flex-direction: column;
-      
-        background-color: rgba(4, 9, 30, 0.7);
-        position: absolute;
-       
-        top: 60px;
-       
-        width: 100%;
-        
-        padding: 10px 0;
-    }
-
-    .nav-links.active {
-        display: flex;
-       
-    }
-
-    .hamburger {
-        display: flex;
-        flex-direction: column;
-        cursor: pointer;
-    }
-
-    .hamburger div {
-        width: 25px;
-        height: 3px;
-        background-color: #fff;
-        margin: 5px;
-        transition: all 0.3s ease;
-    }
-
-    .hamburger.active div:nth-child(1) {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
-
-    .hamburger.active div:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active div:nth-child(3) {
-        transform: rotate(45deg) translate(-5px, -6px);
-    }
-}
-
-@media (min-width: 601px) {
-    .nav-links {
-        display: flex;
-     
-    }
-
-    .hamburger {
-        display: none;
-        
-    }
 }
 
 #back-button {
@@ -163,7 +124,6 @@ h2 {
     font-size: 50px;
     font-family: 'Playfair Display', serif;
 }
-
 footer {
     font-size: 10px;
 }
@@ -203,5 +163,39 @@ img {
 @media (min-width: 769px) {
     .column {
         width: 50%;
+    }
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+
+}
+
+.hamburger.active div:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active div:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active div:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media (max-width: 600px) {
+    .header {
+        background-size: cover;
     }
 }
