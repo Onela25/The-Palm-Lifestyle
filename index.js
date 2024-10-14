@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const backButton = document.getElementById('back-button');
     const hamburger = document.querySelector('.hamburger');
 
-    
     function verifyAge() {
         console.log("verifyAge function called");
         const age = prompt("How old are you?");
@@ -15,10 +14,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    
     verifyAge();
 
-    
+   
     if (hamburger) {
         hamburger.addEventListener('click', () => {
             navLinks.classList.toggle('active'); 
@@ -26,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    
     if (backButton) {
         backButton.addEventListener('click', () => {
             window.location.href = 'index.html'; 
