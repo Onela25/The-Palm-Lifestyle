@@ -12,11 +12,16 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             alert("Welcome🥂"); 
         }
+       
+        localStorage.setItem('ageVerified', 'true');
     }
 
-    verifyAge();
+    
+    if (!localStorage.getItem('ageVerified')) {
+        verifyAge();
+    }
 
-   
+    
     if (hamburger) {
         hamburger.addEventListener('click', () => {
             navLinks.classList.toggle('active'); 
@@ -27,7 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if (backButton) {
         backButton.addEventListener('click', () => {
-            window.location.href = 'index.html'; 
+           
+            window.history.back(); 
         });
     }
 
